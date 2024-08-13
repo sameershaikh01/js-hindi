@@ -38,3 +38,19 @@ const date = new Date("2022-03-25");
 // Reference type or non primitive data
 
 // Array , Object and Functions
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// memory two type  == Stack (primitive type) and heap (non primitive)
+
+let myName = "sameer"
+
+let anotherName = myName;
+
+anotherName = "Mohd"
+console.log(myName);
+
+console.log(anotherName);
