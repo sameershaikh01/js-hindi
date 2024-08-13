@@ -10,3 +10,13 @@ let age = 22
 // bigInt
 //string
 //boolean
+//null
+//undefine
+//symbol => unique
+
+
+//object
+
+console.log(typeof(age))
+// null type of  is object
+// undefinde is undefine
