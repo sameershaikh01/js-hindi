@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: aqua;">
+    
+</body>
+<script>
+   let h1=  document.createElement("h1")
+   console.log(h1)
+   h1.className = "myClass";
+   h1.id = "myId"
+//    h1.setAttribute("myh1", "myH")
+   h1.setAttribute("title" , 'mytitle')
+//   h1.innerText = "my heading"
+const addText = document.createTextNode("my heading is good")
+h1.appendChild(addText)
+
+// show on browser
+document.body.appendChild(h1)
+</script>
+</html>
