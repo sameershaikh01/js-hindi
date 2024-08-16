@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style ="background-color: aqua;">
+      <ul class="language">
+        <li>javascript</li>
+      </ul>
+</body>
+<script>
+    function addList(Lname){
+        const li = document.createElement("li");
+        li.innerHTML = `${Lname}`;
+        document.querySelector(".language").appendChild(li)
+    }
+    // addList("python")
+    // addList("java")
+
+    function addL(Lname){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(Lname))
+        document.querySelector(".language").appendChild(li)
+    }
+    addL("Go")
+
+    const secondlang = document.querySelector("li:nth-child(2)")
+    
+    const newli = document.createElement("li")
+
+    newli.textContent = "sameer"
+    
+
+    secondlang.replaceWith(newli)
+     
+
+    // edit first
+
+    const first = document.querySelector("li:first-child")
+    first.outerHTML = "<li> java </>"
+
+
+
+        //remove
+
+        const removed = document.querySelector("li:last-child")
+       // removed.remove()
+    
+
+</script>
+</html>
