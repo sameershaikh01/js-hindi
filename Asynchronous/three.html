@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+
+<script>
+
+
+    // const sayDate = function(){
+    //     console.log("sameer")
+    // }
+
+
+    //  //setInterval(sayDate,1000)
+
+    // function my() {
+        
+    //     document.querySelector("#start").addEventListener("click", function () {
+    //     console.log("start");
+    //     let set = setInterval(sayDate,1000);
+
+
+    //     document.querySelector("#stop").
+    //     addEventListener("click", function(){
+    //         clearInterval(set);
+    //         console.log("stopped");
+            
+    //     })
+
+
+    // })}
+
+    // my();
+
+
+
+//    const intervalId = clearInterval()
+
+    //  document.querySelector("#stop").addEventListener("click", function(){
+    //           clearInterval(set);
+    //           console.log("stopped");
+              
+    //  })
+
+
+   let setInt
+
+    document.querySelector("#start").
+    addEventListener("click", function (){
+        console.log("start");
+            setInt = setInterval(() => {
+            console.log("sameer");
+            
+        },1000)
+    })
+
+    document.querySelector("#start").
+    addEventListener("click" , function(){
+        clearInterval(setInt);
+        console.log("stopped");
+        
+    })
+
+</script>
+</html>
